@@ -1,0 +1,51 @@
+.education-poll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Light background color for the page */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position relative for child absolute positioning */
+}
+
+.education-poll-container h1 {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: #333; /* Dark text color for better readability */
+}
+
+.education-poll-container p {
+    margin-top: 60px; /* Adjust margin-top to ensure space below the title */
+    margin-bottom: 30px;
+    color: #666; /* Slightly lighter text color for the description */
+    font-size: 18px;
+}
+
+.poll-button, .back-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.poll-button {
+    background-color: #4CAF50; /* Green color for the submit button */
+    color: white;
+}
+
+.back-button {
+    background-color: #007BFF; /* Blue color for the home button */
+    color: white;
+}
+
+.back-button::before {
+    content: "Home"; /* Text inside the back button */
+}
+ 

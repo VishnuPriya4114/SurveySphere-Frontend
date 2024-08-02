@@ -1,0 +1,60 @@
+/* src/components/UserDetails.css */
+.user-details {
+  margin-top:5% ;
+  width: 95%;
+  padding: 20px;
+  background: linear-gradient(135deg, #FFDAB9 0%, #FF7F50 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.head2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-label {
+  display: block;
+  margin-bottom: 10px;
+  color:black;
+  font-weight: bold;
+}
+
+.tag {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+
+
+.buttonm {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a5fff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonm:hover {
+  background-color: #fe7bf7;
+
+}
+.input-container {
+  margin-bottom: 10px; /* Adjust the spacing between input fields */
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+}
+

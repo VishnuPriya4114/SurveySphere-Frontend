@@ -1,0 +1,26 @@
+{
+  "userDetails": [
+    {
+      "id": "0a42",
+      "question": "what is lapto",
+      "options": [
+        "1",
+        "2",
+        "4"
+      ],
+      "pollType": "Single Choice",
+      "color": "#27d5ec"
+    },
+    {
+      "id": "0ae2",
+      "question": "jsdas",
+      "options": [
+        "jszxn",
+        "skadj",
+        "sjdzxn"
+      ],
+      "pollType": "Multiple Choice",
+      "color": "#f91a1a"
+    }
+  ]
+}
