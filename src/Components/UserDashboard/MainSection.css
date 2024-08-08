@@ -1,0 +1,159 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light grey background for the whole app */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* Subtle gradient for a professional look */
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  margin: 10px; /* Add margin for spacing between panels */
+  background-color: #ffffff; /* White background for content areas */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+}
+
+/* Add more specific styles for inner content if needed */
+.left-panel h2, .right-panel h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333; /* Darker text color for headings */
+}
+
+.left-panel p, .right-panel p {
+  font-size: 16px;
+  color: #666; /* Slightly lighter text color for paragraphs */
+}
+
+/* Customize scrollbar for better UX */
+.left-panel::-webkit-scrollbar, .right-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left-panel::-webkit-scrollbar-thumb, .right-panel::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Grey scrollbar thumb */
+  border-radius: 4px;
+}
+
+.left-panel::-webkit-scrollbar-thumb:hover, .right-panel::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* Darker grey on hover */
+}
+
+/* Header Styles */
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #351b14; /* Darker brown for the logo text */
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #8c5e4e; /* Wood-like brown color for navigation links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav a:hover {
+  color: #351b14; /* Darker brown on hover */
+}
+
+.auth-buttons .sign-up, .auth-buttons .sign-in {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effect */
+}
+
+.auth-buttons .sign-up {
+  background-color: #8c5e4e; /* Wood-like brown color for sign-up button */
+  color: white;
+}
+
+.auth-buttons .sign-up:hover {
+  background-color: #351b14; /* Darker brown on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.auth-buttons .sign-in {
+  background-color: #d0b89c; /* Light tan color for sign-in button */
+  color: #333; /* Dark text color for contrast */
+}
+
+.auth-buttons .sign-in:hover {
+  background-color: #b89c8c; /* Slightly darker tan on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Main Section Styles */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5; /* Light wood-like background color */
+  flex-grow: 1;
+  padding: 20px;
+  height: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+  margin-top: 10px;
+}
+
+.intro-text {
+  margin-left: 5%;
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 36px; /* Adjusted font size */
+  margin-bottom: 15px; /* Adjusted margin */
+  color: #5a3e36; /* Darker brown color for text */
+}
+
+.intro-text p {
+  font-size: 16px; /* Adjusted font size */
+  margin-bottom: 20px; /* Adjusted margin */
+  color: #7d5a50; /* Slightly lighter brown color for text */
+}
+
+.sign-up-free {
+  padding: 10px 20px; /* Adjusted padding */
+  font-size: 20px; /* Adjusted font size */
+  background-color: #8c5e4e; /* Wood-like brown color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effect */
+  height: 45px; /* Adjusted height */
+}
+
+.sign-up-free:hover {
+  background-color: #351b14; /* Darker brown on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+}

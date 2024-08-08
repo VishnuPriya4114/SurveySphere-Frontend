@@ -1,0 +1,101 @@
+/* General container for feature cards */
+.feature-cards-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  gap: 15px; /* Spacing between cards */
+  width: 100%; /* Adjust width as needed */
+  margin-left: 20px;
+  padding-bottom: 20px; /* Padding at the bottom to ensure scrolling */
+}
+
+/* Polling card specific styling */
+.polling-card-item {
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  width: 300px; /* Fixed width for each card */
+  height: auto; /* Adjust height based on content */
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow effect */
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text horizontally */
+  min-height: 200px; /* Minimum height for consistency */
+}
+
+/* Styling for buttons within cards */
+.card-button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centered buttons */
+  margin-top: 20px; /* Space between content and buttons */
+}
+
+.change-button-class,
+.delete-button-class {
+  padding: 12px 25px; /* Padding for buttons */
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transitions */
+}
+
+/* Change button specific styling */
+.change-button-class {
+  background-color: #8c5e4e; /* Button color */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.change-button-class:hover {
+  background-color: #7a5344; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Shadow on hover */
+}
+
+/* Delete button specific styling */
+.delete-button-class {
+  background-color: #d0b89c; /* Button color */
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.delete-button-class:hover {
+  background-color: #bca68b; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Shadow on hover */
+}
+
+/* Show more button styling */
+.show-more-button {
+  margin-top: 70px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white; /* Button color */
+  color: #8c5e4e;
+  font-size: 35px; /* Font size for the plus symbol */
+  cursor: pointer;
+  border-radius: 50%; /* Circular button */
+  width: 50px; /* Button dimensions */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s; /* Transitions */
+}
+
+.show-more-button:hover {
+  background-color: #e9bead; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* No more polls message styling */
+.no-more-polls-message {
+  color: red; /* Text color for the message */
+  font-size: 16px; /* Font size */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between button and message */
+}

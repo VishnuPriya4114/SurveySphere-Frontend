@@ -1,0 +1,191 @@
+.polls-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.polls-container {
+  display: flex;
+  justify-content: center; /* Center the polls horizontally */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  width: 100%;
+  max-width: 1400px; /* Increased max-width for larger container */
+}
+
+.poll-card {
+  width: 550px; /* Increased width */
+  margin-top: 50px; /* Reduce space between polls */
+  padding: 20px; /* Increased padding */
+  border: 1px solid #a1887f; /* Border color for visual separation */
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color: #efebe9; /* Light brown background for cards */
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a 3D effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+.poll-card:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.poll-title {
+  margin-bottom: 15px; /* Increased margin */
+  font-size: 22px; /* Increased font size */
+  font-weight: bold;
+  color: #5d4037; /* Dark brown color for titles */
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Increased space between options */
+  font-size: 18px; /* Increased font size for options */
+}
+
+.rating-options {
+  display: flex;
+  cursor: pointer;
+}
+
+.rating-star {
+  font-size: 40px; /* Increased size */
+  color: #8d6e63; /* Medium brown color for stars */
+  transition: color 0.2s;
+}
+
+.rating-star.filled {
+  color: goldenrod;
+}
+
+.single-choice-options,
+.multiple-choice-options,
+.yes-no-options,
+.ranking-options,
+.open-ended-option,
+.matrix-options,
+.demographic-options,
+.poll-with-comments,
+.image-polls,
+.time-based-options,
+.conditional-options {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px; /* Increased font size for options */
+}
+
+@media (max-width: 768px) {
+  .poll-card {
+    padding: 10px;
+    width: 100%; /* Adjust width for smaller screens */
+  }
+}
+
+.education-poll-container {
+  position: relative;
+  padding: 25px; /* Increased padding */
+  background-color: #d7ccc8; /* Light brown background */
+  text-align: center;
+}
+
+.education-poll-container h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px; /* Increased font size */
+  color: #3e2723; /* Dark brown color for headings */
+  margin-bottom: 15px; /* Increased margin */
+}
+
+.education-poll-container p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Increased font size */
+  color: #4e342e; /* Darker brown color for text */
+  margin-bottom: 25px; /* Increased margin */
+}
+
+.education-poll-container .back-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px; /* Increased padding */
+  font-size: 18px; /* Increased font size */
+  color: #d7ccc8; /* Light brown color for button text */
+  background-color: #5d4037; /* Dark brown background color for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  width: 110px; /* Increased width */
+}
+
+.education-poll-container .back-buttons:hover {
+  background-color: #8d6e63; /* Lighter brown on hover */
+}
+
+.no-polls-message {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px; /* Increased font size */
+  color:black; /* Light brown color for no polls message */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.avatar {
+  width: 620px; /* Increased size */
+  height: 620px; /* Increased size */
+  border-radius: 50%;
+  margin-top: 30px;
+  background-color: #a1887f; /* Medium brown background for avatar */
+}
+
+.submit {
+  color: #efebe9; /* Light brown text color */
+  background-color: #5d4037; /* Dark brown background color */
+  padding: 12px 18px; /* Increased padding */
+  font-size: 18px; /* Increased font size */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #8d6e63; /* Lighter brown on hover */
+}
+
+.navigation-arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 24px;
+  color: #efebe9; /* Light brown text color */
+  background-color: #6d4c41; /* Medium brown background color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+  margin: 0 10px;
+}
+
+.arrow:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: #8d6e63; /* Lighter brown on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}

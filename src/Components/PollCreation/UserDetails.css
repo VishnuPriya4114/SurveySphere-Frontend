@@ -1,0 +1,124 @@
+/* src/components/UserDetails.css */
+
+.user-details {
+  margin-top: 10%;
+  padding: 20px;
+  background: linear-gradient(135deg, #8c5e4e 0%, #7a5344 100%); /* Brown gradient background */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  overflow: hidden;
+  border: 2px solid #7a5344; /* Added border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.user-details:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  border-color: #8c5e4e; /* Change border color on hover */
+}
+
+.form-group label {
+  color: whitesmoke; /* Consistent white text color */
+}
+
+.head2 {
+  color: #fff; /* White text color */
+  font-size: 22px; /* Increased font size */
+  margin-bottom: 20px; /* Spacing below heading */
+  text-align: center; /* Centered text */
+}
+
+.userslabel {
+  display: block;
+  margin-bottom: 10px; /* Spacing below label */
+  color: whitesmoke; /* Consistent white text color */
+  font-weight: bold;
+}
+
+.tag {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 6px; /* Smooth corners */
+  margin-bottom: 20px; /* Spacing below input */
+  font-size: 16px; /* Increased font size */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  margin-right: 10%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+.tag:focus {
+  border-color: #8c5e4e; /* Brown border on focus */
+  box-shadow: 0 0 5px rgba(140, 94, 78, 0.5); /* Subtle shadow on focus */
+}
+
+.option-tag {
+  width: calc(100% - 30px); /* Slightly smaller width */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 6px; /* Smooth corners */
+  margin-bottom: 10px; /* Spacing below input */
+  font-size: 16px; /* Increased font size */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+.option-tag:focus {
+  border-color: #8c5e4e; /* Brown border on focus */
+  box-shadow: 0 0 5px rgba(140, 94, 78, 0.5); /* Subtle shadow on focus */
+}
+
+.buttonm {
+  width: 100%; /* Full width */
+  padding: 12px; /* Increased padding */
+  border: none;
+  border-radius: 6px; /* Smooth corners */
+  background-color: #8c5e4e; /* Brown background color */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  margin-bottom: 10px; /* Spacing below button */
+}
+
+.buttonm:hover {
+  background-color: #7a5344; /* Darker brown on hover */
+  transform: scale(1.02); /* Slightly larger on hover */
+}
+
+.input-container {
+  margin-bottom: 10px; /* Spacing below input container */
+  width: 335px; /* Fixed width */
+  margin-left: 20%; /* Centered horizontally */
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Spacing below */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Spacing below form group */
+}
+
+.option-limit-message {
+  color: red; /* Red text color */
+  font-size: 14px; /* Slightly smaller font size */
+  margin-bottom: 10px; /* Spacing below message */
+}
+
+.option-number {
+  margin-right: 8px; /* Spacing to the right */
+  font-weight: bold;
+}
+
+.option-tag {
+  flex: 1; /* Flexible width */
+  padding: 8px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Smooth corners */
+  font-size: 14px; /* Font size */
+}
+
+.option-tag:focus {
+  border-color: #8c5e4e; /* Brown border on focus */
+  box-shadow: 0 0 5px rgba(140, 94, 78, 0.5); /* Subtle shadow on focus */
+}

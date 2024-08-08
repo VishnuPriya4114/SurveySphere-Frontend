@@ -1,0 +1,164 @@
+/* Dashboard.css */
+
+.xxx{
+  background-color: #efebe9;
+  height:100vh;
+}
+
+.appBarStyled {
+  background-color: #4e342e; /* Dark brown color for the app bar */
+  z-index: 1400; /* Adjust the z-index if needed */
+}
+
+.drawerStyled {
+  background-color: #efebe9; /* Light brown background for the drawer */
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.drawerStyled .MuiDrawer-paper {
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 24px;
+  margin-left: 240px; /* Adjust if the drawer width is different */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  height: calc(100vh - 64px); /* Adjust based on the height of the app bar */
+}
+
+.sectionTitle {
+  margin-top: 20px;
+  text-align: center;
+  color: #3e2723; /* Dark brown color for section titles */
+}
+
+.boxStyled {
+  width: 100%;
+  height: 150px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #795548; /* Medium brown border color */
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+}
+
+.boxStyled img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.gap {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.poll-gif {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+  margin-left: 10px;
+}
+
+.toolbarRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.centeredContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers items horizontally */
+}
+
+.gridItem {
+  flex: 1 1 30%; /* Allows items to grow and shrink, with a basis of 30% of container width */
+  max-width: 30%; /* Ensures items do not exceed 30% of container width */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.PerformanceCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #efebe9; /* Light brown background */
+  border: 10px solid #4e342e; /* Dark brown border */
+  position: relative;
+}
+
+.CircularProgressStyled {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ScrollableContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust based on your layout */
+  padding: 16px;
+  border: 1px solid #795548; /* Medium brown border color */
+  border-radius: 8px;
+}
+
+.drawerStyled .MuiListItem-root {
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 4px; /* Rounded corners for list items */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.drawerStyled .MuiListItemIcon-root {
+  min-width: 50px; /* Increased width for larger icons */
+}
+
+.drawerStyled .MuiListItemIcon-root svg {
+  font-size: 30px; /* Increased size of icons */
+  color: #4e342e; /* Icon color to match theme */
+}
+
+.drawerStyled .MuiListItemIcon-root svg:hover {
+  color: #3e2723; /* Slightly darker color on hover */
+}
+
+.drawerStyled .MuiListItemText-primary {
+  font-size: 18px; /* Increased font size for list item text */
+  font-weight: 500; /* Bold text for primary */
+  color: #3e2723; /* Dark brown text color for better readability */
+}
+
+.drawerStyled .MuiListItemText-secondary {
+  font-size: 16px; /* Optional: increase font size for secondary text if used */
+  color: #5d4037; /* Slightly lighter color for secondary text */
+}

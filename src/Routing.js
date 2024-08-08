@@ -1,20 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Landing from './LandingPage/SplitLandingPage';
-import SignUp from './SignUp/SignUp';
-import Login from './SignIn/Login';
-import App from './UserDashboard/App';
-import Main from './PollCreation/Main';
+import Landing from './Components/LandingPage/SplitLandingPage';
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/SignIn/Login';
+import App from './Components/UserDashboard/Apps';
+import Main from './Components/PollCreation/Main';
 
-import Education from './PollDashboard/Education';
-import SocialMedia from './PollDashboard/SocialMedia';
- import Healthcare from './PollDashboard/Healthcare';
- import Technology from './PollDashboard/Technology';
- import Sports from './PollDashboard/Sports';
- import Entertainment from './PollDashboard/Entertainment';
- import Government from './PollDashboard/Government';
-import Dashboard from './PollDashboard/Dashboard';
-import Settings from './PollDashboard/Settings';
+import Education from './Components/PollDashboard/Education';
+import SocialMedia from './Components/PollDashboard/SocialMedia';
+ import Healthcare from './Components/PollDashboard/Healthcare';
+ import Technology from './Components/PollDashboard/Technology';
+ import Sports from './Components/PollDashboard/Sports';
+ import Entertainment from './Components/PollDashboard/Entertainment';
+ import Government from './Components/PollDashboard/Government';
+import Dashboard from './Components/PollDashboard/Dashboard';
+import Settings from './Components/PollDashboard/Settings';
+import DisplayPolls from './Components/UserDashboard/DisplayPolls';
 
 const Routing = () => {
     return (
@@ -24,7 +25,7 @@ const Routing = () => {
                 <Route path="/" element={<Landing/>} />  
                 <Route path="/login" element={<Login/>} />     
                 <Route path="/userdashboard" element={<App/>} />     
-                <Route path="/main" element={<Main/>} />  
+                <Route path="/main" element={<Main/>} />    
                 
                 <Route path="/publicdashboard" element={<Dashboard />} /> 
                 <Route path="/education" element={<Education />} />
@@ -35,6 +36,7 @@ const Routing = () => {
               <Route path="/entertainment" element={<Entertainment />} />
               <Route path="/government" element={<Government />} />
               <Route path="/Settings" element={<Settings/>}/>
+              <Route path="/DisplayPolls" element={<DisplayPolls/>}/>
             </Routes>
         </Router>
     );
